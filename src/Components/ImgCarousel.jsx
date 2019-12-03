@@ -7,25 +7,28 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 const ImgCarousel = () => {
     return (
-        <Carousel showArrows={true}>
-            <div>
-                <img src="images/slice05.jpg" />
+        <div className="imgCarousel">
+            <Carousel showArrows={true} showThumbs={false}>
 
-            </div>
-            <div>
-                <img src="images/slice04.jpg" />
+                <div>
+                    <img src="images/slice05.jpg" />
 
-            </div>
-            <div>
-                <img src="images/slice06.jpg" />
+                </div>
+                <div>
+                    <img src="images/slice04.jpg" />
 
-            </div>
-            <div>
-                <img src="images/slice05.jpg" />
+                </div>
+                <div>
+                    <img src="images/slice04.jpg" />
 
-            </div>
+                </div>
+                <div>
+                    <img src="images/slice05.jpg" />
 
-        </Carousel>
+                </div>
+
+            </Carousel>
+        </div>
     );
 }
 

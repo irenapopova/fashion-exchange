@@ -87,3 +87,18 @@ li {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+
+.footer {
+
+  height: 250px;
+  width: calc(100%-40px);
+  background-color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main {
+  height: 800px;
+  margin: 20px;
+
+}

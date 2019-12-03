@@ -7,7 +7,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ImgCarousel />
+
+      <div className="main">
+        <ImgCarousel />
+      </div>
+
+      <div className="footer">
+        <p>this is my footer</p>
+      </div>
 
     </div>
   );
