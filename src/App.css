@@ -34,6 +34,10 @@ li {
 }
 
 .innerNav {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-right: 4px;
 
   max-width: 72rem;
   margin: 0 auto;
@@ -101,4 +105,28 @@ li {
   height: 800px;
   margin: 20px;
 
+}
+
+#footer-div-1 {
+  width: 100%;
+  height: 90%;
+  flex-direction: row;
+  display: flex;
+}
+
+#footer-div-2 {
+  width: 100%;
+  height: 10%;
+  background-color: #eee;
+}
+
+#footer-column1,
+#footer-column2,
+#footer-column3,
+#footer-column4 {
+  width: 25%;
+  height: 100%;
+  color: red;
+  align-items: center;
+  justify-content: center;
 }
