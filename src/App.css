@@ -1,22 +1,72 @@
-.App {
-  text-align: center;
+h1, h2, h3, p, .App, html, body, #root{
+  padding:0;
+  margin: 0;
 }
+li{
+  list-style: none;
 
-.App-logo {
-  height: 40vmin;
 }
-
-.App-header {
-  background-color: #282c34;
+.App{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: lightgray;
 }
 
-.App-link {
-  color: #09d3ac;
+.logo-wrapper{
+  height: 60px;
+  width: 200px;
+  background-image: url(images/logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.header{
+/* padding-bottom: 0.2rem; */
+
+}
+.innerNav {
+  
+  max-width: 72rem;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  width: 94%;
+  
+}
+#topNav, #mainNavBar{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+#mainNavBar{
+  min-height: 2rem;
+  margin-top: 0.6rem;
+  background-color: white;
+  border-radius: 0.1rem;
+}
+#languageOptions{
+  /* display: flex; */
+  text-align: right;
+}
+#languageOptions a{
+  margin-left: 1rem;
+  
+}
+
+.header ul{
+  margin-bottom: 0;
+  display: flex;
+}
+
+#navList>li{
+  margin-left: 1rem;
+
+}
+#mainNavList{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#mainNavList>li{
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
