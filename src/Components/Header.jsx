@@ -8,7 +8,7 @@ const Header = () => {
 
             <nav className="innerNav">
                 <div id="topNav">
-                    <div class="logo-wrapper" />
+                    <div className="logo-wrapper" />
                     <div>
                         <div id="languageOptions">
                             <a>EN</a>
@@ -27,16 +27,16 @@ const Header = () => {
 
                 </div>
                 <div id="mainNavBar">
-        <ul id="mainNavList">
-        <li>HOME</li>
-        <li>WOMEN</li>
-        <li>MEN</li>
-        <li>TEMPLATES</li>
-        <li>ABOUT US</li>
-        <li>CONTACT US</li>
+                    <ul id="mainNavList">
+                        <li>HOME</li>
+                        <li>WOMEN</li>
+                        <li>MEN</li>
+                        <li>TEMPLATES</li>
+                        <li>ABOUT US</li>
+                        <li>CONTACT US</li>
 
 
-        </ul>
+                    </ul>
                 </div>
 
             </nav>

@@ -1,72 +1,89 @@
-h1, h2, h3, p, .App, html, body, #root{
-  padding:0;
+h1,
+h2,
+h3,
+p,
+.App,
+html,
+body,
+#root {
+  padding: 0;
   margin: 0;
 }
-li{
+
+li {
   list-style: none;
 
 }
-.App{
+
+.App {
   min-height: 100vh;
   background-color: lightgray;
 }
 
-.logo-wrapper{
+.logo-wrapper {
   height: 60px;
   width: 200px;
-  background-image: url(images/logo.png);
+  background-image: url(/public/images/logo.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.header{
-/* padding-bottom: 0.2rem; */
+
+.header {
+  /* padding-bottom: 0.2rem; */
 
 }
+
 .innerNav {
-  
+
   max-width: 72rem;
   margin: 0 auto;
   font-size: 0.8rem;
   width: 94%;
-  
+
 }
-#topNav, #mainNavBar{
+
+#topNav,
+#mainNavBar {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
 }
-#mainNavBar{
+
+#mainNavBar {
   min-height: 2rem;
   margin-top: 0.6rem;
   background-color: white;
   border-radius: 0.1rem;
 }
-#languageOptions{
+
+#languageOptions {
   /* display: flex; */
   text-align: right;
 }
-#languageOptions a{
+
+#languageOptions a {
   margin-left: 1rem;
-  
+
 }
 
-.header ul{
+.header ul {
   margin-bottom: 0;
   display: flex;
 }
 
-#navList>li{
+#navList>li {
   margin-left: 1rem;
 
 }
-#mainNavList{
+
+#mainNavList {
   margin: 0;
   padding: 0;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-#mainNavList>li{
+#mainNavList>li {
   margin-right: 1rem;
   margin-left: 1rem;
 }
