@@ -31,7 +31,7 @@ const Header = () => {
                         <li>HOME</li>
                         <li>WOMEN</li>
                         <li>MEN</li>
-                        <li>TEMPLATES</li>
+                        <li>TEMPLATE PAGES</li>
                         <li>ABOUT US</li>
                         <li>CONTACT US</li>
 

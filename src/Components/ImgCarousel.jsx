@@ -15,15 +15,15 @@ const ImgCarousel = () => {
 
                 </div>
                 <div>
-                    <img src="images/slice04.jpg" />
+                    <img src="images/slice01.jpg" />
+
+                </div>
+                <div>
+                    <img src="images/slice03.jpg" />
 
                 </div>
                 <div>
                     <img src="images/slice04.jpg" />
-
-                </div>
-                <div>
-                    <img src="images/slice05.jpg" />
 
                 </div>
 

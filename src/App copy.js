@@ -37,7 +37,7 @@ function App() {
 
             <ImgCarousel />
             <ImgBanner />
-
+            <ProductCarousel />
 
           </div>
         </div>
