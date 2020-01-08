@@ -4,109 +4,109 @@ var ProductDetail = require('productDetail').ProductDetail;
 
 const ProductDetail = () => {
   return (
-    <div class="contentWrapper row">
-      <div class="col-md-12">
-        <div class="preview-block clearfix">
-          <div class="product-preview col-md-4">
-            <div class="big-image"><a href="#" class="elevatezoom"><img src="images/small/n14d0663px-4.jpg"
-              data-zoom-image="images/large/n14d0663px-4.jpg" class="zoom fancybox img-respnsive"></a></div>
-              <div id="gallery_01" class="thumbs"><a href="#" data-image="images/small/n14d0663px-4.jpg"
-                data-zoom-image="images/large/n14d0663px-4.jpg" class="image-thumb active"><img
+    <div className="contentWrapper row">
+      <div className="col-md-12">
+        <div className="preview-block clearfix">
+          <div className="product-preview col-md-4">
+            <div className="big-image"><a href="#" className="elevatezoom"><img src="images/small/n14d0663px-4.jpg"
+              data-zoom-image="images/large/n14d0663px-4.jpg" className="zoom fancybox img-respnsive"></a></div>
+              <div id="gallery_01" className="thumbs"><a href="#" data-image="images/small/n14d0663px-4.jpg"
+                data-zoom-image="images/large/n14d0663px-4.jpg" className="image-thumb active"><img
                   src="images/small/n14d0663px-4.jpg" /></a><a href="#" data-image="images/small/n14d0663px-2.jpg"
-                    data-zoom-image="images/large/n14d0663px-2.jpg" class="image-thumb active"><img
+                    data-zoom-image="images/large/n14d0663px-2.jpg" className="image-thumb active"><img
                     src="images/small/n14d0663px-2.jpg" /></a><a href="#" data-image="images/small/n14d0663px-4.jpg"
-                      data-zoom-image="images/large/n14d0663px-4.jpg" class="image-thumb active"><img
+                      data-zoom-image="images/large/n14d0663px-4.jpg" className="image-thumb active"><img
                     src="images/small/n14d0663px-4.jpg" /></a><a href="#" data-image="images/small/n14d0663px-6.jpg"
-                      data-zoom-image="images/large/n14d0663px-6.jpg" class="image-thumb active"><img
+                      data-zoom-image="images/large/n14d0663px-6.jpg" className="image-thumb active"><img
                     src="images/small/n14d0663px-6.jpg" /></a><a href="#" data-image="images/small/n14d0663px-7.jpg"
-                      data-zoom-image="images/large/n14d0663px-7.jpg" class="image-thumb active"><img
+                      data-zoom-image="images/large/n14d0663px-7.jpg" className="image-thumb active"><img
                     src="images/small/n14d0663px-7.jpg" /></a>
               </div>
             </div>
-            <div class="product-details col-md-8">
-              <div class="entry-header clearfix">
+            <div className="product-details col-md-8">
+              <div className="entry-header clearfix">
                 <h3>One Shoulder Asymmetric Dress</h3>
-                <div class="print-block"><i class="fa fa-print margin-r-10"></i><a href="javascript:void(0);"
+                <div className="print-block"><i className="fa fa-print margin-r-10"></i><a href="javascript:void(0);"
                   title="Print this page">Print this page</a>
                 </div>
               </div>
-              <article class="entry-content">
-                <div class="rate-bar">
-                  <div class="rateit-selected"></div>
-                </div><span class="entry-review-count">(14 Votes) </span><span> 15 orders</span>
-                <ul class="info-details">
+              <article className="entry-content">
+                <div className="rate-bar">
+                  <div className="rateit-selected"></div>
+                </div><span className="entry-review-count">(14 Votes) </span><span> 15 orders</span>
+                <ul className="info-details">
                   <li><span>Price</span>
-                    <del class="value original-price">$59.80</del>
+                    <del className="value original-price">$59.80</del>
                   </li>
-                  <li><span>Discount Price</span>$39.80<span class="discount">30% off</span></li>
+                  <li><span>Discount Price</span>$39.80<span className="discount">30% off</span></li>
                   <li><span>Brand</span>Versace</li>
                   <li><span>Availability</span>In Stock</li>
                   <li><span>Product Code</span>GF-123456</li>
-                  <li class="colors"><span>Color</span>
+                  <li className="colors"><span>Color</span>
                     <label>
-                      <input type="radio" name="color" /><b title="white" class="white"></b>
+                      <input type="radio" name="color" /><b title="white" className="white"></b>
                     </label>
                     <label>
-                      <input type="radio" name="color" /><b title="silver" class="silver"></b>
+                      <input type="radio" name="color" /><b title="silver" className="silver"></b>
                     </label>
                     <label>
-                      <input type="radio" name="color" /><b title="black" class="black"></b>
+                      <input type="radio" name="color" /><b title="black" className="black"></b>
                     </label>
                     <label>
-                      <input type="radio" name="color" /><b title="green" class="green"></b>
+                      <input type="radio" name="color" /><b title="green" className="green"></b>
                     </label>
                     <label>
-                      <input type="radio" name="color" /><b title="yellow" class="yellow"></b>
+                      <input type="radio" name="color" /><b title="yellow" className="yellow"></b>
                     </label>
                     <label>
-                      <input type="radio" name="color" /><b title="pink" class="pink"></b>
+                      <input type="radio" name="color" /><b title="pink" className="pink"></b>
                     </label>
                     <label>
-                      <input type="radio" name="color" /><b title="tomato" class="tomato"></b>
+                      <input type="radio" name="color" /><b title="tomato" className="tomato"></b>
                     </label>
                     <label>
-                      <input type="radio" name="color" /><b title="purple" class="purple"></b>
+                      <input type="radio" name="color" /><b title="purple" className="purple"></b>
                     </label>
                     <label>
-                      <input type="radio" name="color" /><b title="pattern" class="pattern"></b>
+                      <input type="radio" name="color" /><b title="pattern" className="pattern"></b>
                     </label>
                   </li>
-                  <li class="sizes"><span>Size</span>
+                  <li className="sizes"><span>Size</span>
                     <label>
-                      <input type="radio" name="size" /><b title="XS" class="XS">XS</b>
+                      <input type="radio" name="size" /><b title="XS" className="XS">XS</b>
                     </label>
                     <label>
-                      <input type="radio" name="size" /><b title="S" class="S">S</b>
+                      <input type="radio" name="size" /><b title="S" className="S">S</b>
                     </label>
                     <label>
-                      <input type="radio" name="size" /><b title="M" class="M">M</b>
+                      <input type="radio" name="size" /><b title="M" className="M">M</b>
                     </label>
                     <label>
-                      <input type="radio" name="size" /><b title="L" class="L">L</b>
+                      <input type="radio" name="size" /><b title="L" className="L">L</b>
                     </label>
                     <label>
-                      <input type="radio" name="size" /><b title="XL" class="XL">XL</b>
+                      <input type="radio" name="size" /><b title="XL" className="XL">XL</b>
                     </label>
                     <label>
-                      <input type="radio" name="size" /><b title="XLL" class="XLL">XLL</b>
+                      <input type="radio" name="size" /><b title="XLL" className="XLL">XLL</b>
                     </label>
                     <label>
-                      <input type="radio" name="size" /><b title="XLLL" class="XLLL">XLLL</b>
+                      <input type="radio" name="size" /><b title="XLLL" className="XLLL">XLLL</b>
                     </label>
                   </li>
                   <li><span>Quantity</span>
                     <input type="number" value="1">
           </li>
         </ul>
-                  <div class="row flex ad-block">
-                    <div class="col-md-6">
-                      <div class="buy-protection-block clearfix"><img src="images/shield-icon.png" alt="" style=""
-                        class="pull-left">
+                  <div className="row flex ad-block">
+                    <div className="col-md-6">
+                      <div className="buy-protection-block clearfix"><img src="images/shield-icon.png" alt="" style=""
+                        className="pull-left">
                         <h3>Buyer Protection</h3>
-                        <div class="buy-protection-info">
-                          <ul class="list-unstyled">
-                            <li><i class="fa fa-check"></i><strong>Full Refund</strong> if you don't receive your order</li>
-                            <li><i class="fa fa-check"></i><strong>Refund or Keep</strong> items not as described</li>
+                        <div className="buy-protection-info">
+                          <ul className="list-unstyled">
+                            <li><i className="fa fa-check"></i><strong>Full Refund</strong> if you dont receive your order</li>
+                            <li><i className="fa fa-check"></i><strong>Refund or Keep</strong> items not as described</li>
                           </ul>
                         </div>
             </div>
@@ -114,9 +114,9 @@ const ProductDetail = () => {
                     </div>
 
 
-                    <div class="button-group"><a href="#" class="btn-cta"><i class="fa fa-shopping-cart"></i> ADD TO
-            CARD</a><a href="#" title="Add to Wishlist" class="btn-outline"><i class="fa fa-heart"></i></a><a
-                        href="#" title="Add to Comapre" class="btn-outline"><i class="fa fa-retweet"></i></a></div>
+                    <div className="button-group"><a href="#" className="btn-cta"><i className="fa fa-shopping-cart"></i> ADD TO
+            CARD</a><a href="#" title="Add to Wishlist" className="btn-outline"><i className="fa fa-heart"></i></a><a
+                        href="#" title="Add to Comapre" className="btn-outline"><i className="fa fa-retweet"></i></a></div>
       </article>
     </div>
   </div>
@@ -125,8 +125,8 @@ const ProductDetail = () => {
               export default ProductDetail;
 
           //* my notes   *//
-              // TODO: to figure out what causes the brake 🤔
+              
               // ! Have to check in the console 
               // ? what to do next ?
               // * What should I do to solve the error?
-    // ?
+    

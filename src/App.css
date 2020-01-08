@@ -12,7 +12,6 @@ body,
 
 li {
   list-style: none;
-
 }
 
 .App {
@@ -30,7 +29,6 @@ li {
 
 .header {
   /* padding-bottom: 0.2rem; */
-
 }
 
 .innerNav {
@@ -43,7 +41,6 @@ li {
   margin: 0 auto;
   font-size: 0.8rem;
   width: 94%;
-
 }
 
 #topNav,
@@ -67,7 +64,6 @@ li {
 
 #languageOptions a {
   margin-left: 1rem;
-
 }
 
 .header ul {
@@ -75,9 +71,8 @@ li {
   display: flex;
 }
 
-#navList>li {
+#navList > li {
   margin-left: 1rem;
-
 }
 
 #mainNavList {
@@ -87,17 +82,17 @@ li {
   font-size: 1.2rem;
 }
 
-#mainNavList>li {
+#mainNavList > li {
   margin-right: 1rem;
   margin-left: 1rem;
 }
 
 #sideBar {
   width: 30%;
-
 }
 
-#sideBarCategories {}
+#sideBarCategories {
+}
 
 #navCategories {
   background-color: white;
@@ -105,8 +100,6 @@ li {
   /* background: url(/images/marker2.png) 0 50% no-repeat; */
   padding-left: 10px;
 }
-
-
 
 /* fancy BOX  */
 .fancybox-ad {
@@ -126,7 +119,7 @@ li {
   margin: 0px 15px;
   font-size: 16px;
   font-weight: bold;
-  border-bottom: 1px solid #E4E4E4;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .fancybox-ad .off {
@@ -139,7 +132,7 @@ li {
 }
 
 .fancybox-ad .special-text {
-  color: #DF0A71;
+  color: #df0a71;
 }
 
 .fancybox-ad .main {
@@ -163,11 +156,11 @@ li {
   border-radius: 0px;
 }
 
-.fancybox-ad .list-inline>li {
+.fancybox-ad .list-inline > li {
   padding-right: 0;
 }
 
-.fancybox-ad .list-inline>li .round-icon {
+.fancybox-ad .list-inline > li .round-icon {
   border-color: #eee;
 }
 
@@ -185,7 +178,6 @@ li {
 .fancybox-inner {
   overflow: hidden !important;
 }
-
 
 .icon-01 {
   -moz-transition: all 0.2s ease;
@@ -232,7 +224,7 @@ li {
   z-index: 2;
   color: #fff;
   padding: 5px 10px;
-  background-color: #DF0A71;
+  background-color: #df0a71;
 }
 
 .product .entry-main {
@@ -296,7 +288,7 @@ li {
 }
 
 .photo-wrapper .icon-style i:hover {
-  color: #DF0A71;
+  color: #df0a71;
   background-color: #fff;
 }
 
@@ -318,7 +310,8 @@ li {
 }
 
 .noUiSlider .noUi-handle {
-  background: transparent url("/images/img-slider-handle.png") no-repeat top left;
+  background: transparent url("/images/img-slider-handle.png") no-repeat top
+    left;
   border-radius: 0;
   cursor: pointer;
   -moz-transition: all 0.1s ease-out;
@@ -344,7 +337,7 @@ li {
 }
 
 .noUiSlider .noUi-connect {
-  background: #DF0A71 url("/images/bg-slider-stripes.png") repeat-x !important;
+  background: #df0a71 url("/images/bg-slider-stripes.png") repeat-x !important;
   cursor: pointer;
   border-top: 1px solid rgba(150, 150, 150, 0.2);
 }
@@ -397,7 +390,7 @@ li {
 .filter-block .round-icon {
   width: 2.5em;
   height: 2.5em;
-  padding-top: .6em;
+  padding-top: 0.6em;
 }
 
 .filter-size .round-icon {
@@ -405,8 +398,8 @@ li {
 }
 
 .filter-size .round-icon:hover {
-  border-color: #DF0A71;
-  color: #DF0A71;
+  border-color: #df0a71;
+  color: #df0a71;
 }
 
 .filter-color .round-icon {
@@ -422,7 +415,7 @@ li {
 /*================================
 product layout - list
 =======================================*/
-.products-layout>div {
+.products-layout > div {
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -455,7 +448,6 @@ product layout - list
 .products-layout.list .entry-main .price {
   margin-top: 0;
 }
-
 
 /* BANNER - BLOCK */
 .banner-block .banner-item {
@@ -514,6 +506,35 @@ product layout - list
 .banner-block .banner-item:hover img {
   border-color: #fff;
 }
+.product {
+  width: 33%;
+  padding: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+.product-carousel-container {
+  position: relative;
+}
+.product-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 480px;
+}
+.carouselNavigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.round-icon {
+  display: block;
+  width: 2em;
+  height: 2em;
+  padding-top: 6px;
+  text-align: center;
+  border: 1px solid #888686;
+  background-color: ;
+}
 
 /* Newsletter section */
 .newsletter {
@@ -538,12 +559,9 @@ product layout - list
   width: 100%;
 }
 
-
-
 /* FOOTER  */
 
 .footer {
-
   height: 250px;
   width: calc(100%-40px);
   background-color: black;
@@ -557,8 +575,6 @@ product layout - list
   flex-direction: row;
   display: flex;
   width: 94%;
-
-
 }
 
 #footer-div-1 {
@@ -589,4 +605,9 @@ product layout - list
   /*   width: 70%; */
 
   margin: 0 10px;
+}
+
+.img-wrapper {
+  position: relative;
+  margin: 0 0 10px;
 }

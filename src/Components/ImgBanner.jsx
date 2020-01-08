@@ -5,31 +5,31 @@ var ReactDOM = require('react-dom');
 
 const ImgBanner = () => {
     return (
-        <div class="row banner-block clearfix hidden-sm margin-20">
-            <div class="col-md-4 banner-item hidden-sm hidden-xs">
-                <div class="img-wrapper"><img src="images/banner01.jpg" class="img-responsive" /><span class="triangle"></span>
-                    <div class="titles">
-                        <p class="title01">free shipping</p>
-                        <p class="title02">on orders</p>
-                        <p class="title03">over  €120</p>
+        <div className="row banner-block clearfix hidden-sm margin-20">
+            <div className="col-md-4 banner-item hidden-sm hidden-xs">
+                <div className="img-wrapper"><img src="images/banner01.jpg" className="img-responsive" /><span className="triangle"></span>
+                    <div className="titles">
+                        <p className="title01">free shipping</p>
+                        <p className="title02">on orders</p>
+                        <p className="title03">over  €120</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 banner-item hidden-sm hidden-xs">
-                <div class="img-wrapper"><img src="images/banner02.jpg" class="img-responsive" /><span class="triangle"></span>
-                    <div class="titles">
-                        <p class="title01">free shipping</p>
-                        <p class="title02">on orders</p>
-                        <p class="title03">over €120</p>
+            <div className="col-md-4 banner-item hidden-sm hidden-xs">
+                <div className="img-wrapper"><img src="images/banner02.jpg" className="img-responsive" /><span className="triangle"></span>
+                    <div className="titles">
+                        <p className="title01">free shipping</p>
+                        <p className="title02">on orders</p>
+                        <p className="title03">over €120</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 banner-item hidden-sm hidden-xs">
-                <div class="img-wrapper"><img src="images/banner03.jpg" class="img-responsive" /><span class="triangle"></span>
-                    <div class="titles">
-                        <p class="title01">free shipping</p>
-                        <p class="title02">on orders</p>
-                        <p class="title03">over €120</p>
+            <div className="col-md-4 banner-item hidden-sm hidden-xs">
+                <div className="img-wrapper"><img src="images/banner03.jpg" className="img-responsive" /><span className="triangle"></span>
+                    <div className="titles">
+                        <p className="title01">free shipping</p>
+                        <p className="title02">on orders</p>
+                        <p className="title03">over €120</p>
                     </div>
                 </div>
             </div>

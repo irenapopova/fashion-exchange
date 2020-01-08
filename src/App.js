@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 import Header from './Components/Header';
 import ImgCarousel from './Components/ImgCarousel'
 import Categories from './Components/Categories';
@@ -37,6 +39,8 @@ function App() {
 
             <ImgCarousel />
             <ImgBanner />
+            <ProductCarousel />
+
 
 
           </div>
