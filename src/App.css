@@ -71,7 +71,7 @@ li {
   display: flex;
 }
 
-#navList > li {
+#navList>li {
   margin-left: 1rem;
 }
 
@@ -82,7 +82,7 @@ li {
   font-size: 1.2rem;
 }
 
-#mainNavList > li {
+#mainNavList>li {
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -91,8 +91,7 @@ li {
   width: 30%;
 }
 
-#sideBarCategories {
-}
+#sideBarCategories {}
 
 #navCategories {
   background-color: white;
@@ -156,11 +155,11 @@ li {
   border-radius: 0px;
 }
 
-.fancybox-ad .list-inline > li {
+.fancybox-ad .list-inline>li {
   padding-right: 0;
 }
 
-.fancybox-ad .list-inline > li .round-icon {
+.fancybox-ad .list-inline>li .round-icon {
   border-color: #eee;
 }
 
@@ -310,8 +309,7 @@ li {
 }
 
 .noUiSlider .noUi-handle {
-  background: transparent url("/images/img-slider-handle.png") no-repeat top
-    left;
+  background: transparent url("/images/img-slider-handle.png") no-repeat top left;
   border-radius: 0;
   cursor: pointer;
   -moz-transition: all 0.1s ease-out;
@@ -415,7 +413,7 @@ li {
 /*================================
 product layout - list
 =======================================*/
-.products-layout > div {
+.products-layout>div {
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -450,6 +448,10 @@ product layout - list
 }
 
 /* BANNER - BLOCK */
+
+.banner-block {
+  margin-top: 20px;
+}
 .banner-block .banner-item {
   position: relative;
   overflow: hidden;
@@ -506,20 +508,36 @@ product layout - list
 .banner-block .banner-item:hover img {
   border-color: #fff;
 }
+
 .product {
-  width: 33%;
+  /*width: 33%; */
+
   padding: 10px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
 }
+
 .product-carousel-container {
   position: relative;
+  width: 100%;
 }
+
 .product-carousel {
   position: relative;
   width: 100%;
-  overflow: hidden;
-  height: 480px;
+  /*overflow: hidden;
+  height: 480px; */
 }
+
+.product-carousel-inner-container {
+  /*width: 200%; 
+  position: absolute;
+  top: 0;
+  left: 0; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
 .carouselNavigation {
   position: absolute;
   top: 0;
@@ -570,7 +588,7 @@ product layout - list
 }
 
 .main {
-  height: 800px;
+  /*height: 800px;*/
   margin: 20px auto;
   flex-direction: row;
   display: flex;
