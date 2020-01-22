@@ -10,10 +10,65 @@ import ProductCarousel from './Components/ProductCarousel';
 import YouHaveVisited from './Components/YouHaveVisited';
 import TagCloud from './Components/TagCloud';
 
+
 function App() {
+
+  const newproducts = [
+    {
+      image: "images/pro-24.jpg",
+      title: "Beautiful Strapless Sweetheart Slit Chiffon Pageant Dress",
+      sale: true
+    },
+    {
+      image: "images/pro-25.jpg",
+      title: "Princess Floor-Length Shoulder Chiffon Dress",
+      sale: true
+    },
+    {
+      image: "images/pro-26.jpg",
+      title: "Beautiful Strapless Sweetheart Slit Chiffon Pageant Dress",
+      sale: true
+    },
+    {
+      image: "images/pro-27.jpg",
+      title: "Beautiful Strapless Sweetheart Slit Chiffon Pageant Dress",
+      sale: true
+    },
+    {
+      image: "images/pro-27.jpg",
+      title: "Beautiful Strapless Sweetheart Slit Chiffon Pageant Dress",
+      sale: true
+    }
+
+  ]
+
+  const newcollection = [
+    {
+      image: "images/pro-26.jpg",
+      title: "Beautiful Strapless Sweetheart Slit Chiffon Pageant Dress",
+      sale: true
+    },
+
+    {
+      image: "images/pro-26.jpg",
+      title: "Beautiful Strapless Sweetheart Slit Chiffon Pageant Dress",
+      sale: false
+    },
+    {
+      image: "images/pro-27.jpg",
+      title: "Beautiful Strapless Sweetheart Slit Chiffon Pageant Dress",
+      sale: true
+    },
+    {
+      image: "images/pro-27.jpg",
+      title: "Beautiful Strapless Sweetheart Slit Chiffon Pageant Dress",
+      sale: false
+    }
+  ]
 
   return (
     <div className="App">
+
       <Header />
 
       <div className="main">
@@ -39,7 +94,15 @@ function App() {
 
             <ImgCarousel />
             <ImgBanner />
-            <ProductCarousel />
+            <ProductCarousel
+              title="New Products Hi"
+              products={newproducts}
+            />
+
+            <ProductCarousel
+              title="New Collection"
+              products={newcollection}
+            />
 
 
 

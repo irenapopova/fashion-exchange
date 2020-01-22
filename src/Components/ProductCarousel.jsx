@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const CarouselNavigation = ({ onPrev, onNext }) => {
     return (
 
@@ -34,43 +35,84 @@ const Product = ({ image, title, link, sale }) => {
 
 
 }
-const ProductCarousel = ({ title = "New Product" }) => {
-    return (
-        <div className="product-carousel-container">
+class ProductCarousel extends React.Component {
+
+    constructor() {
+        super()
+        this.state = {
+            x: 0
+        }
+    }
+    render() {
+
+        const products = this.props.products
+        return (
+            <div className="product-carousel-container">
+
+                <div className="CarouselTitle">
+                    <h3>{this.props.title || "New Product"}</h3>
+                </div>
+
+                <CarouselNavigation
+                    onPrev={() => {
+                        const newX = this.state.x - 1
+                        if (newX >= 0)
+                            this.setState({ x: this.state.x - 1 })
+                    }
+                    }
+                    onNext={() => {
+                        const newX = this.state.x + 1
+                        if (newX < products.length - 2)
+                            this.setState({ x: this.state.x + 1 })
+                    }
+                    }
+                />
+                <div className="product-carousel">
+                    <div
+                        className="product-carousel-inner-container"
+                        style={{
+                            "grid-template-columns": `repeat(${products.length}, 1fr)`,
+                            width: `${100 * products.length / 3}%`,
+                            transform: `translate(${this.state.x * -100 / products.length}%, 0px)`
+                        }}>
 
 
-            <div className="CarouselTitle">
-                <h3>{title}</h3>
-            </div>
+                        {products.map(product =>
 
-            <CarouselNavigation
-                onPrev={() => alert("prev")}
-            />
-            <div className="product-carousel">
-                <div className="product-carousel-inner-container">
+                            <Product
+                                image={product.image}
+                                title={product.title}
+                                sale={product.sale}
+                            />)}
 
 
 
-                    <Product
-                        image="images/pro-24.jpg"
-                        title="Beautiful Strapless Sweetheart Slit Chiffon Pageant Dress"
-                        sale
-                    />
-                    <Product
-                        image="images/pro-25.jpg"
-                        title="Princess Floor-Length Shoulder Chiffon Dress"
-                        sale
-                    />
-                    <Product />
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        {/*
                     <div className="product">
                         <div className="photo-wrapper"><img src="images/pro-25.jpg" alt="" className="img-responsive" />
                             <div className="icon-style hidden-list hidden-sm hidden-xs"><a href="product_detail.html"
                                 className="img-link"></a><a href="cart.html" title="Add to Cart"><i
                                     className="fa fa-shopping-cart icon-01"></i></a><a href="my_account.html" title="Add to Wishlist"><i
-                                        className="fa fa-heart icon-02"></i></a><a href="compare_product.html" title="Add to Comapre"><i
-                                            className="fa fa-refresh icon-03"></i></a></div>
+                                        className="fa fa-heart icon-02"></i></a><a href="compare_product.html" title="Add to Compare"><i
+                                            className="fa fa-exchange icon-03"></i></a></div>
                         </div>
                         <div className="entry-main clearfix">
                             <div className="rate-bar">
@@ -87,7 +129,7 @@ const ProductCarousel = ({ title = "New Product" }) => {
                             <div className="icon-style hidden-list hidden-sm hidden-xs"><a href="product_detail.html"
                                 className="img-link"></a><a href="cart.html" title="Add to Cart"><i
                                     className="fa fa-shopping-cart icon-01"></i></a><a href="my_account.html" title="Add to Wishlist"><i
-                                        className="fa fa-heart icon-02"></i></a><a href="compare_product.html" title="Add to Comapre"><i
+                                        className="fa fa-heart icon-02"></i></a><a href="compare_product.html" title="Add to Compare"><i
                                             className="fa fa-refresh icon-03"></i></a></div>
                         </div>
                         <div className="entry-main clearfix">
@@ -105,7 +147,7 @@ const ProductCarousel = ({ title = "New Product" }) => {
                             <div className="icon-style hidden-list hidden-sm hidden-xs"><a href="product_detail.html"
                                 className="img-link"></a><a href="cart.html" title="Add to Cart"><i
                                     className="fa fa-shopping-cart icon-01"></i></a><a href="my_account.html" title="Add to Wishlist"><i
-                                        className="fa fa-heart icon-02"></i></a><a href="compare_product.html" title="Add to Comapre"><i
+                                        className="fa fa-heart icon-02"></i></a><a href="compare_product.html" title="Add to Compare"><i
                                             className="fa fa-refresh icon-03"></i></a></div>
                         </div>
                         <div className="entry-main clearfix">
@@ -122,7 +164,7 @@ const ProductCarousel = ({ title = "New Product" }) => {
                             <div className="icon-style hidden-list hidden-sm hidden-xs"><a href="product_detail.html"
                                 className="img-link"></a><a href="cart.html" title="Add to Cart"><i
                                     className="fa fa-shopping-cart icon-01"></i></a><a href="my_account.html" title="Add to Wishlist"><i
-                                        className="fa fa-heart icon-02"></i></a><a href="compare_product.html" title="Add to Comapre"><i
+                                        className="fa fa-heart icon-02"></i></a><a href="compare_product.html" title="Add to Compare"><i
                                             className="fa fa-refresh icon-03"></i></a></div>
                         </div>
                         <div className="entry-main clearfix">
@@ -140,7 +182,7 @@ const ProductCarousel = ({ title = "New Product" }) => {
                             <div className="icon-style hidden-list hidden-sm hidden-xs"><a href="product_detail.html"
                                 className="img-link"></a><a href="cart.html" title="Add to Cart"><i
                                     className="fa fa-shopping-cart icon-01"></i></a><a href="my_account.html" title="Add to Wishlist"><i
-                                        className="fa fa-heart icon-02"></i></a><a href="compare_product.html" title="Add to Comapre"><i
+                                        className="fa fa-heart icon-02"></i></a><a href="compare_product.html" title="Add to Compare"><i
                                             className="fa fa-refresh icon-03"></i></a></div>
                         </div>
 
@@ -151,14 +193,17 @@ const ProductCarousel = ({ title = "New Product" }) => {
                             <h5 className="entry-title"><a href="#">Princess Floor-Length Shoulder Chiffon Dress</a></h5>
                             <s className="entry-discount"></s>&nbsp;<span className="price">250.00</span>
                         </div>
+                        
 
 
 
                     </div>
+*/}
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default ProductCarousel;

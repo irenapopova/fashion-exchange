@@ -87,7 +87,7 @@ li {
   margin-left: 1rem;
 }
 
-#sideBar {
+.sideBar {
   width: 30%;
 }
 
@@ -452,6 +452,7 @@ product layout - list
 .banner-block {
   margin-top: 20px;
 }
+
 .banner-block .banner-item {
   position: relative;
   overflow: hidden;
@@ -524,17 +525,19 @@ product layout - list
 .product-carousel {
   position: relative;
   width: 100%;
-  /*overflow: hidden;
-  height: 480px; */
+  overflow: hidden;
+  height: 480px;
 }
 
 .product-carousel-inner-container {
-  /*width: 200%; 
+  /*width: 200%; */
   position: absolute;
   top: 0;
-  left: 0; */
+  left: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /*;*/
+  transition: transform 200ms;
+  grid-column-gap: 10px;
 
 }
 
@@ -593,6 +596,7 @@ product layout - list
   flex-direction: row;
   display: flex;
   width: 94%;
+  max-width: 72rem;
 }
 
 #footer-div-1 {
