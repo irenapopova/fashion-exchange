@@ -75,16 +75,15 @@ function App() {
 
         <div className="sideBar" >
           <div id="sideBar-div-1">
-            <div className="sideBar-1">
-              <h4>CATEGORIES</h4>
-            </div>
+
             <Categories></Categories>
 
           </div>
 
 
-          <h4>TagCloud</h4>
           <TagCloud></TagCloud>
+
+          <YouHaveVisited></YouHaveVisited>
 
 
         </div>

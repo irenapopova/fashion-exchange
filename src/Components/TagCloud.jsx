@@ -1,12 +1,11 @@
 import React from 'react'
-var ReactDOM = require('react-dom');
-//var TagCloud = require('tagCloud').TagCloud;
+import SidebarItem from './SidebarItem';
+
 
 const TagCloud = () => {
     return (
 
-        <div className="TagCloud">
-
+        <SidebarItem title="Tag Cloud">
             <nav className="navTagCloud"></nav>
             <ul id="navTagCloud">
                 <li>New Collection</li>
@@ -17,7 +16,7 @@ const TagCloud = () => {
 
 
             </ul>
-        </div>
+        </SidebarItem>
 
     );
 }

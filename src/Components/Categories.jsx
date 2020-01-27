@@ -1,12 +1,12 @@
 import React from 'react';
-
+import SidebarItem from './SidebarItem';
 
 
 
 const Categories = () => {
     return (
-        <div className="Categories">
-
+        <SidebarItem title="Categories">
+        
             <nav className="navCategories"></nav>
             <ul id="navCategories">
                 <li>New Arrivals</li>
@@ -21,7 +21,7 @@ const Categories = () => {
                 <li>Shoulder Bag</li>
 
             </ul>
-        </div>
+        </SidebarItem>
     );
 }
 export default Categories;

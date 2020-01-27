@@ -3,8 +3,6 @@ var ReactDOM = require('react-dom');
 var Carousel = require('react-responsive-carousel').Carousel;
 
 
-
-
 const ImgCarousel = () => {
     return (
         <div className="imgCarousel">
