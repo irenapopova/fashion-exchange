@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams
+} from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import '@fortawesome/fontawesome-free/css/all.css';
@@ -9,6 +16,8 @@ import ImgBanner from './Components/ImgBanner';
 import ProductCarousel from './Components/ProductCarousel';
 import YouHaveVisited from './Components/YouHaveVisited';
 import TagCloud from './Components/TagCloud';
+import ProductDetail from './Components/ProductDetail';
+import Wall from './Components/Wall';
 
 
 function App() {
@@ -67,80 +76,86 @@ function App() {
   ]
 
   return (
-    <div className="App">
+    <Router>
 
-      <Header />
+      <div className="App">
 
-      <div className="main">
+        <Header />
 
-        <div className="sideBar" >
-          <div id="sideBar-div-1">
+        <div className="main">
 
-            <Categories></Categories>
+          <div className="sideBar" >
+            <div id="sideBar-div-1">
 
-          </div>
+              <Categories></Categories>
 
-
-          <TagCloud></TagCloud>
-
-          <YouHaveVisited></YouHaveVisited>
+            </div>
 
 
-        </div>
-        <div className="wall">
+            <TagCloud></TagCloud>
 
-          <div id="carouselContainer">
-
-            <ImgCarousel />
-            <ImgBanner />
-            <ProductCarousel
-              title="New Products Hi"
-              products={newproducts}
-            />
-
-            <ProductCarousel
-              title="New Collection"
-              products={newcollection}
-            />
-
+            <YouHaveVisited></YouHaveVisited>
 
 
           </div>
+          <div className="wall">
+
+            <div id="carouselContainer">
+
+              <ImgCarousel />
+              <ImgBanner />
+              <ProductCarousel
+                title="New Products Hi"
+                products={newproducts}
+              />
+
+              <ProductCarousel
+                title="New Collection"
+                products={newcollection}
+              />
+
+
+
+            </div>
+          </div>
+
+
         </div>
+        <Switch>
+          <Route path="/" children={<Wall />} exact />
+          <Route path="/products/:id" children={<ProductDetail />} />
+        </Switch>
+
+        <div className="footer">
+
+          <div id="footer-div-1">
+            <div id="footer-column1">
+              <h4>CUSTOMER SERVICE</h4>
+
+            </div>
+
+            <div id="footer-column2">
+              <h4>CUSTOMER SERVICE</h4>
+            </div>
+
+            <div id="footer-column3">
+              <h4>CUSTOMER SERVICE</h4>
+
+            </div>
+            <div id="footer-column4">
+              <h4>CONTACT US</h4>
+
+            </div>
+
+          </div>
+          <div id="footer-div-2"> DIV TWO</div>
+
+        </div>
+
 
 
       </div>
-
-
-      <div className="footer">
-
-        <div id="footer-div-1">
-          <div id="footer-column1">
-            <h4>CUSTOMER SERVICE</h4>
-
-          </div>
-
-          <div id="footer-column2">
-            <h4>CUSTOMER SERVICE</h4>
-          </div>
-
-          <div id="footer-column3">
-            <h4>CUSTOMER SERVICE</h4>
-
-          </div>
-          <div id="footer-column4">
-            <h4>CONTACT US</h4>
-
-          </div>
-
-        </div>
-        <div id="footer-div-2"> DIV TWO</div>
-
-      </div>
-
-
-
-    </div >
+    </Router>
   );
 }
 

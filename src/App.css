@@ -91,12 +91,35 @@ li {
   width: 30%;
 }
 
+.sideBarItem {
+  background: white;
+  margin: 0 0 10px;
+}
+
 .sidebarItemTitle h4 {
   font-size: 18px;
 }
 
+img {
+  max-width: 100%;
+}
+
+.image-detail-layout {
+  display: flex;
+  padding: 10px;
+  align-items: stretch;
+}
+
 .image-detail-layout img {
   width: 100%;
+
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
 }
 
 .sidebarItemTitle {

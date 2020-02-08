@@ -2,7 +2,7 @@ import React from 'react'
 var ReactDOM = require('react-dom');
 var CustomNavigation = require('customNavigation').CustomNavigation;
 
-// ! Arrow function ES7
+// ! Arrow function ES6
 const Categories = () => {
     return (
         <div className="featured-product has-carousel clearfix">
